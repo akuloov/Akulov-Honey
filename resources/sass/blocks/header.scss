@@ -1,0 +1,39 @@
+.header {
+	background: url("../../../image/header.png") no-repeat;
+	background-size: 100% 100%;
+	padding-top: 5px;
+	padding-bottom: 15px;
+
+	&__container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left{
+		display: flex;
+		align-items: center;
+	}
+
+	&__tel{
+		margin-right: 25px;
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 40px;
+		transition: all .3s;
+		position: relative;
+
+		&:hover{
+			opacity: .5;
+		}
+	}
+
+	&__bee{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: -30px;
+		left: -30px;
+	}
+}
