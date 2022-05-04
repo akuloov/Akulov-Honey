@@ -8,21 +8,49 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media (max-width: 950px) {
+			flex-direction: column;
+		}
 	}
 
 	&__left{
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
 	}
 
 	&__tel{
 		margin-right: 25px;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		font-weight: 700;
 		font-size: 40px;
 		transition: all .3s;
 		position: relative;
+		z-index: 10;
+
+		@media (max-width: 470px) {
+			font-size: 30px;
+			margin-right: 0;
+		}
+		@media (max-width: 400px) {
+			font-size: 25px;
+		}
+
+		&--right{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&--small{
+			font-size: 15px;
+		}
 
 		&:hover{
 			opacity: .5;
